@@ -22,7 +22,7 @@ class publicSite(webapp2.RequestHandler):
         page_address = self.request.uri
         path_layer = urlparse(page_address)[2].split('/')[1]
         base = os.path.basename(page_address)
-        page_html = 'one'
+        html_file = 'one.html'
 
         if path_layer == 'one':
         	  html_file = 'one.html'
